@@ -53,7 +53,7 @@ if (args.embed) {
 }`)
 } else {
   const envdata = Object.keys(data)
-                      .map(k => `${prefix}${k}${suffix}='${data[k]}'`)
+                      .map(k => `${prefix}${k}${suffix}=${data[k]}`)
                       .join('\n');
   fs.writeFileSync(outputFile, `${envdata}\n`);
   console.log(`✅ ${outputFile} created.`)
