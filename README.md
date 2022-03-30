@@ -37,13 +37,13 @@ $ convert-json-env example-firebaseConfig.json --prefix="export "
 ✅ example-firebaseConfig.env created.
 
 $ cat example-firebaseConfig.env
-export apiKey='abcdefghijklmnopqrstuvwxyz1234567890ABC'
-export authDomain='myapp-1234a.firebaseapp.com'
-export databaseURL='https://myapp-1234a.firebaseio.com'
-export projectId='myapp-1234a'
-export storageBucket='myapp-1234a.appspot.com'
-export messagingSenderId='123456789012'
-export appId='1:234567890124:web:1234567890abcdef'
+export apiKey=abcdefghijklmnopqrstuvwxyz1234567890ABC
+export authDomain=myapp-1234a.firebaseapp.com
+export databaseURL=https://myapp-1234a.firebaseio.com
+export projectId=myapp-1234a
+export storageBucket=myapp-1234a.appspot.com
+export messagingSenderId=123456789012
+export appId=1:234567890124:web:1234567890abcdef
 ```
 
 ### Case 2. Environment variables in Vue application.
@@ -52,13 +52,13 @@ $ convert-json-env example-firebaseConfig.json --out=.local.env --prefix=VUE_APP
 ✅ .local.env created.
 
 $ cat .env.local
-VUE_APP_apiKey='abcdefghijklmnopqrstuvwxyz1234567890ABC'
-VUE_APP_authDomain='myapp-1234a.firebaseapp.com'
-VUE_APP_databaseURL='https://myapp-1234a.firebaseio.com'
-VUE_APP_projectId='myapp-1234a'
-VUE_APP_storageBucket='myapp-1234a.appspot.com'
-VUE_APP_messagingSenderId='123456789012'
-VUE_APP_appId='1:234567890124:web:1234567890abcdef'
+VUE_APP_apiKey=abcdefghijklmnopqrstuvwxyz1234567890ABC
+VUE_APP_authDomain=myapp-1234a.firebaseapp.com
+VUE_APP_databaseURL=https://myapp-1234a.firebaseio.com
+VUE_APP_projectId=myapp-1234a
+VUE_APP_storageBucket=myapp-1234a.appspot.com
+VUE_APP_messagingSenderId=123456789012
+VUE_APP_appId=1:234567890124:web:1234567890abcdef'
 ```
 
 ### Case 3. Standard output for code embedded in javascript.
